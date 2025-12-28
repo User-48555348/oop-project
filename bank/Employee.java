@@ -70,7 +70,7 @@ public class Employee extends User implements UserAuthentication {
         }
     }
     
-    public static Employee handleEmployeeRegistration(Scanner scanner, ArrayList<Employee> employees, 
+    public static Employee EmployeeRegistration(Scanner scanner, ArrayList<Employee> employees, 
                                                       int employeeIdCounter, UsernameChecker usernameChecker) {
         System.out.println("\n--- Employee Registration ---");
         
@@ -184,7 +184,7 @@ public class Employee extends User implements UserAuthentication {
         }
     }
     
-    public static void handleEmployeeLogin(Scanner scanner, ArrayList<Employee> employees, 
+    public static void EmployeeLogin(Scanner scanner, ArrayList<Employee> employees, 
                                           ArrayList<Customer> customers, ArrayList<BankAccount> accounts) {
         System.out.println("\n--- Employee Login ---");
         
