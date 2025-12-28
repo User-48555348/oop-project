@@ -54,7 +54,6 @@ public class Customer extends User implements UserAuthentication {
         }
     }
     
-    // MOVED FROM BankSystem: Customer registration logic
     public static Customer customerRegistration(Scanner scanner, ArrayList<Customer> customers, 
                                                       int customerIdCounter, UsernameChecker usernameChecker) {
         System.out.println("\n--- Customer Registration ---");
@@ -495,7 +494,6 @@ public class Customer extends User implements UserAuthentication {
         }
     }
     
-    // Interface to allow Customer methods to check username availability
     public interface UsernameChecker {
         boolean isUsernameTaken(String username);
     }
