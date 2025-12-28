@@ -48,7 +48,7 @@ public class BankSystem implements Employee.UsernameChecker, Customer.UsernameCh
             
             switch (choice) {
                 case 1:
-                    Customer newCustomer = Customer.handleCustomerRegistration(
+                    Customer newCustomer = Customer.CustomerRegistration(
                         scanner, customers, customerIdCounter, this
                     );
                     if (newCustomer != null) {
@@ -57,8 +57,7 @@ public class BankSystem implements Employee.UsernameChecker, Customer.UsernameCh
                     }
                     break;
                 case 2:
-                    // CALLING Employee method via switch-case
-                    Employee newEmployee = Employee.handleEmployeeRegistration(
+                    Employee newEmployee = Employee.EmployeeRegistration(
                         scanner, employees, employeeIdCounter, this
                     );
                     if (newEmployee != null) {
@@ -67,10 +66,10 @@ public class BankSystem implements Employee.UsernameChecker, Customer.UsernameCh
                     }
                     break;
                 case 3:
-                    Customer.handleCustomerLogin(scanner, customers, accounts);
+                    Customer.CustomerLogin(scanner, customers, accounts);
                     break;
                 case 4:
-                    Employee.handleEmployeeLogin(scanner, employees, customers, accounts);
+                    Employee.EmployeeLogin(scanner, employees, customers, accounts);
                     break;
                 case 5:
                     atmServices();
