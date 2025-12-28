@@ -55,7 +55,7 @@ public class Customer extends User implements UserAuthentication {
     }
     
     // MOVED FROM BankSystem: Customer registration logic
-    public static Customer handleCustomerRegistration(Scanner scanner, ArrayList<Customer> customers, 
+    public static Customer customerRegistration(Scanner scanner, ArrayList<Customer> customers, 
                                                       int customerIdCounter, UsernameChecker usernameChecker) {
         System.out.println("\n--- Customer Registration ---");
         
@@ -132,7 +132,7 @@ public class Customer extends User implements UserAuthentication {
     }
     
     // MOVED FROM BankSystem: Customer login logic
-    public static void handleCustomerLogin(Scanner scanner, ArrayList<Customer> customers, 
+    public static void CustomerLogin(Scanner scanner, ArrayList<Customer> customers, 
                                           ArrayList<BankAccount> accounts) {
         System.out.println("\n--- Customer Login ---");
         
