@@ -48,7 +48,7 @@ public class BankSystem implements Employee.UsernameChecker, Customer.UsernameCh
             
             switch (choice) {
                 case 1:
-                    Customer newCustomer = Customer.CustomerRegistration(
+                    Customer newCustomer = Customer.customerRegistration(
                         scanner, customers, customerIdCounter, this
                     );
                     if (newCustomer != null) {
